@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dojo amd test</title>
+    <script>
+        var dojoConfig = {
+            baseUrl: 'js/',
+            tlmSiblingOfDojo: false
+        };
+    </script>
+    <script src="js/libs/dojo.js"></script>
+</head>
+<body>
+<script>
+    require(['app/tono.myClass'], function(myClass) {
+        var test = new myClass('Tomas', 77);
+        test.alert();
+    });
+</script>
+</body>
+</html>
